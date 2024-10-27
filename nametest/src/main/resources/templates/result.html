@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Result Page</title>
+</head>
+<body>
+    <h1>Submitted Text</h1>
+    <div th:each="i : ${#numbers.sequence(1, 10)}">
+        <p th:text="${inputText}"></p>
+    </div>
+    <a href="/">Go Back</a>
+</body>
+</html>
